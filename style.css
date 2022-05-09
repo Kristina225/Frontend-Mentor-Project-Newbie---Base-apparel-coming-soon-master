@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 62.5%;
+    --color-desaturated-red: #ce9898;
+    --color-soft-red: #F96464;
+    --color-dark-grayish-red: #423A3A;
+}
+
+/* --------------------------------------- MOBILE STYLES ----------------------------- */
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(150deg, #FFFFFF 0%, #FFF4F4 84.51%);
+    color: var(--color-desaturated-red);
+}
+
+.logo {
+    position: absolute;
+    top: 3.1rem;
+    left: 3.2rem;
+}
+
+.logo img {
+    max-width: 10rem;
+}
+
+.content--container {
+    order: 1;
+}
+
+.image--container {
+    width: 100%;
+    height: 25rem;
+    margin-top: 8.4rem;
+    background: url("images/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    max-width: 83%;
+    margin: 6.4rem auto 9.2rem auto;
+    text-align: center;
+}
+
+.content__title {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.2rem;
+    letter-spacing: 1.1rem;
+    text-transform: uppercase;
+    color: var(--color-dark-grayish-red);
+}
+
+.content__title span {
+    font-weight: 300;
+    color: var(--color-desaturated-red);
+}
+
+.content__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    margin-top: 1.6rem;
+}
+
+.content__signup {
+    margin-top: 3.2rem;
+    position: relative;
+}
+
+.content__signup--input {
+    width: 100%;
+    height: 4.8rem;
+    border-radius: 2.8rem;
+    opacity: 0.5;
+    padding-left: 2.4rem;
+    border: 0.1rem solid var(--color-desaturated-red);
+    display: flex;
+    align-items: center;
+    color: var(--color-dark-grayish-red);
+    mix-blend-mode: multiply;
+}
+
+.content__signup--input:active,
+.content__signup--input:focus {
+    outline: 1.5px solid var(--color-desaturated-red);
+}
+
+
+.content__signup--input::placeholder {
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    opacity: 0.5;
+    margin-left: 2.4rem;
+    color: var(--color-desaturated-red);
+}
+
+.content__signup--btn {
+    width: 6.4rem;
+    height: 4.8rem;
+    border: none;
+    border-radius: 2.8rem;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content__signup--error--icon {
+    max-width: 2.4rem;
+    position: absolute;
+    top: 1.3rem;
+    right: 7.2rem;
+    display: none;
+}
+
+
+/* --------------------------------------------- DESKTOP STYLES -------------------------------- */
+
+
+@media only screen and (min-width: 500px) {
+    body {
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    }
+    
+    .content--container {
+        background: url("images/bg-pattern-desktop.svg"), linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);;
+        background-repeat: no-repeat;
+        background-position: top 0 left 0;
+        background-size: 100% 100%;
+        flex: 57.6%;
+        order: 0;
+    }
+    
+    .image--container {
+        flex: 43.4%;
+        order: 0;
+        width: 100%;
+        margin-top: 0;
+        background: url("images/hero-desktop.jpg");
+        background-position: top 0 left 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+
+    .logo {
+        position: static;
+        margin-top: 7.4rem;
+        margin-left: 16.5rem;
+    }
+
+    .logo img {
+        max-width: 15.8rem;
+    }
+
+    .content {
+        max-width: 44.5rem;
+        margin: 13.6rem 22rem 16.2rem 16.5rem;
+        text-align: left;
+    }
+    
+    .content__title {
+        font-size: 6.4rem;
+        line-height: 7.1rem;
+        letter-spacing: 1.73rem;
+    }
+    
+    .content__text {
+        margin-top: 3.2rem;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+    
+    .content__signup--input {
+        margin-top: 4rem;
+        width: 44.5rem;
+        height: 5.6rem;
+        padding-left: 3.2rem;
+        opacity: 0.5;
+    }
+    
+    .content__signup--input:active,
+    .content__signup--input:focus {
+        outline: 1.5px solid var(--color-desaturated-red);
+    }
+    
+    
+    .content__signup--input::placeholder {
+        margin-left: 3.2rem;
+        font-size: 1.6rem;
+    }
+    
+    .content__signup--btn {
+        width: 10rem;
+        height: 5.6rem;
+    }
+    
+    .content__signup--error--icon {
+        position: absolute;
+        top: 1.7rem;
+        right: 11.6rem;
+        max-width: 2.4rem;
+        display: none;
+    }
+
+    .content__signup--error--message {
+        font-size: 1.3rem;
+        line-height: 2.8rem;
+        font-weight: 400;
+        color: var(--color-soft-red);
+        position: absolute;
+        bottom: -3rem;
+        left: 3.2rem;
+    }
+}

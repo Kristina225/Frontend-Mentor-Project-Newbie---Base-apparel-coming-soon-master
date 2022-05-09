@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+      <div class="content--container">
+        <div class="logo">
+            <img src="images/logo.svg" alt="company logo">
+        </div>
+        <div class="content">
+            <h1 class="content__title"><span>We're</span> coming soon</h1>
+            <p class="content__text">Hello fellow shoppers! We're currently building our new fashion store. 
+              Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            <form method="POST" action="#" class="content__signup" id="signup-form" novalidate>
+                <input class="content__signup--input" type="email" name="email" placeholder="Email Address">
+                <button class="content__signup--btn" type="submit">
+                    <img src="images/icon-arrow.svg" alt="signup arrow">
+                </button>
+                <img class="content__signup--error--icon" src="images/icon-error.svg" alt="error">
+                <p class="content__signup--error--message" id="error-message"></p>
+            </form>
+        </div>
+      </div>
+      <div class="image--container"></div>
+</body>
+<script src="app.js"></script>
+</html>
