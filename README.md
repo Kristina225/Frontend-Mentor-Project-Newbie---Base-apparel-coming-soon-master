@@ -13,8 +13,6 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -34,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Kristina225/Frontend-Mentor-Project-Newbie---Base-apparel-coming-soon-master
+- Live Site URL: https://base-apparel-coming-soon-master-fm13.netlify.app/
 
 ## My process
 
